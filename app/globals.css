@@ -35,3 +35,15 @@
     --radius: 0.5rem;
   }
 }
+
+@layer base {
+  * {
+    @apply border-border antialiased;
+  }
+  html {
+    @apply h-full;
+  }
+  body {
+    @apply h-full bg-background text-foreground;
+  }
+}

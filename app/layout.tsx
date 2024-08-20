@@ -22,7 +22,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
           <div className="flex h-full flex-col">
-            <div className="flex-1">{children}</div>
+            <div className="flex-1">{children}</div>{" "}
+            {/* flex-1 garante que o meu children ocupe toda a largura que sobra: (total - footer) */}
             <Footer />
           </div>
         </AuthProvider>

@@ -36,7 +36,7 @@ export function BarbershopItem({ barbershop }: BarbershopItemProps) {
           <h3 className="overflow-hidden truncate">{barbershop.name}</h3>
           <p className="truncate text-sm text-gray-400">{barbershop.address}</p>
           <Button className="mt-3 w-full" variant={"secondary"} asChild>
-            <Link href={`/barbershop/${barbershop.id}`}>Reservar</Link>
+            <Link href={`/barbershops/${barbershop.id}`}>Reservar</Link>
           </Button>
         </div>
       </CardContent>
